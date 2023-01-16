@@ -3,7 +3,7 @@ import infoicon from "../images/info_icon.png";
 import transporticon from "../images/transport_icon.png";
 import ratinginfo from "../images/rating_icon.png";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faBars, faClose, faCartPlus} from '@fortawesome/free-solid-svg-icons';
+import {faBars, faClose, faCartPlus, faSearch} from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from "react-router-dom";
 import Men from "./men";
 
@@ -34,6 +34,7 @@ function Home() {
                         <li><a href="">Personalize</a></li>
                         <li><a href="">Collections</a></li>
                         <li><a href="">Sales</a></li>
+                        <li><div className="box"><input type="text" placeholder="Search..."/><a href="#"><FontAwesomeIcon icon={faSearch}/></a></div></li>
                     </ul>
                 </div>
                 <button onClick={showMenu}><FontAwesomeIcon className="fa" icon={faBars}/></button>

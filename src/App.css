@@ -51,6 +51,20 @@ nav {
   padding: 8px 12px;
 }
 
+.nav-links ul li .box{
+  cursor: pointer;
+}
+.nav-links ul li .box:hover input{
+  width: 128px;
+}
+.nav-links ul li .box input{
+  width: 0px;
+  outline: none;
+  border: none;
+  transition: 0.8s;
+  background: transparent;
+}
+
 .nav-links ul li a {
   color: rgb(0, 0, 0);
   text-decoration: none;
